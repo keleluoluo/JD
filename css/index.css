@@ -1,0 +1,478 @@
+.index{
+    background-color: #f5f5f5;
+    overflow: hidden;
+    /*height: 2000px;*/
+}
+.index .search{
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    background-color: rgba(201, 21, 35, 1);
+    overflow: hidden;
+    z-index: 1;
+
+}
+.index .search-box{
+    height: 30px;
+    margin: 5px 55px 0 80px;
+    position: relative;
+}
+/*伪元素添加放大镜*/
+.index .search-box::before{
+    content: "";
+    position: absolute;
+    top:6px;
+    left: 8px;
+    width: 22px;
+    height: 21px;
+    background-image: url("../images/jd-sprites.png");
+    background-position: -57px -109px;
+    background-size: 200px 200px;
+}
+.index .search-box input{
+    border-radius: 15px;
+    padding-left: 35px;
+    font-size: 12px;
+}
+.index .search a{
+    position: absolute;
+}
+/*logo*/
+.index .search .logo{
+    width: 57px;
+    height: 26px;
+    background-image: url("../images/jd-sprites.png");
+    background-size: 200px 200px;
+    background-position: 0px -108px;
+    left: 10px;
+    top: 10px;
+}
+/*登录*/
+.index .search .login{
+    top:0;
+    right: 16px;
+    line-height: 40px;
+    color: white;
+    font-size: 12px;
+}
+/*轮播图*/
+.index .view img{
+    width: 100%;
+}
+.index .view li {
+    height: 100%;
+    overflow: hidden;
+}
+
+.swipe {
+    overflow: hidden;
+    visibility: hidden;
+    position: relative;
+    margin-top: 40px;
+}
+.swipe-wrap {
+    overflow: hidden;
+    position: relative;
+}
+.swipe-wrap > li {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+/*导航*/
+.index .navs{
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+.index .navs a{
+    color: #333333;
+    float: left;
+    font-size: 12px;
+    text-align: center;
+    width: 25%;
+}
+.index .navs img{
+    width: 60%;
+    margin: 10px 15px;
+}
+/*秒杀*/
+.index .seckill{
+    background-color: #fff;
+    margin-top: 10px;
+}
+/*给标题清除浮动*/
+.index .seckill .title{
+    padding: 12px;
+    overflow: hidden;
+}
+.index .seckill h4{
+    padding-left: 26px;
+    float: left;
+    font-size: 14px;
+    color: darkred;
+    position: relative;
+}
+/*添加小闹钟*/
+.index .seckill h4::before{
+    content: "";
+    position: absolute;
+    top: -4px;
+    left:0;
+    width: 20px;
+    height: 21px;
+    background-image: url("../images/jd-sprites.png");
+    background-size: 200px 200px;
+    background-position: -84px -109px;
+}
+/*去除空格*/
+.index .seckill .time{
+    font-size: 0;
+    float: left;
+    margin-left: 5px;
+}
+.index .seckill .time span{
+    font-size: 14px;
+    background-color: #333333;
+    color: white;
+    padding-bottom: 1px;
+}
+/*秒杀部分的时间细节*/
+.index .seckill .time span:nth-child(3n+1){
+    border-radius: 2px 0 0 2px;
+    padding-left: 2px;
+}
+.index .seckill .time span:nth-child(3n+2){
+    border-radius: 0 2px 2px 0;
+    padding-right: 2px;
+}
+.index .seckill .time span:nth-child(3n){
+    background-color: transparent;
+    color: #333333;
+}
+/*秒杀更多部分*/
+.index .seckill .more{
+    float: right;
+    font-size: 12px;
+    color: #333333;
+}
+.index .seckill .goods li{
+    width: 33.33%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    text-align: center;
+    float: left;
+}
+.index .goods{
+    overflow: hidden;
+}
+.index .goods p{
+    margin-top: 10px;
+}
+.index .goods span{
+    display: block;
+}
+.index .goods span:nth-child(1){
+    color: darkred;
+    font-size: 12px;
+}
+.index .goods span:nth-child(2){
+    color: #aaa;
+    text-decoration: line-through;
+    font-size: 12px;
+}
+.index .goods a{
+    position: relative;
+}
+.index .goods i{
+    display: block;
+    background-color: #FDB60A;
+    width: 40px;
+    line-height: 20px;
+    font-style: inherit;
+    height: 20px;
+    border-radius: 50px;
+    font-size: 12px;
+    color: white;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+/*广告部分*/
+.index .banner{
+    position: relative;
+
+}
+.index .banner ul{
+    width: 100%;
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    padding: 0 8px;
+    box-sizing: border-box;
+}
+.index .banner li{
+    float: left;
+    width: 50%;
+}
+/*主营部分*/
+.index .major{
+
+}
+.index .major ul{
+    width: 100%;
+}
+.index .major ul li{
+    float: left;
+    width: 50%;
+}
+.index .major ul li:nth-child(-n+3){
+    width: 33.33%;
+}
+/*活动部分*/
+.index .advert{
+    padding: 10px;
+    overflow: hidden;
+}
+/*特色超市*/
+.index .market{
+    background-color: white;
+}
+.index .market h4{
+    color: darkred;
+    font-size: 14px;
+    padding-left: 10px;
+}
+.index .market ul{
+    width: 100%;
+}
+.index .market li{
+    float: left;
+    width: 50%;
+}
+.index .market li:nth-child(4){
+    clear: both;
+}
+/*满199减100*/
+.index .bannertwo{
+    padding: 10px;
+    overflow: hidden;
+}
+/*主题街*/
+.index .theme{
+    background-color: white;
+}
+.index .theme h4{
+    color: red;
+    line-height: 40px;
+}
+.index .theme ul{
+    width: 100%;
+}
+.index .theme li{
+    float: left;
+    width: 25%;
+}
+.index .theme li:nth-child(-n+2){
+    width: 50%;
+}
+.index .theme li:nth-child(5){
+    clear: both;
+}
+.index .bannerthree{
+    padding: 10px;
+    overflow: hidden;
+}
+/*品牌推荐*/
+.index .brand {
+    background-color: #fff;
+}
+.index .brand h4{
+    color: red;
+    line-height: 30px;
+}
+.index .brand ul{
+    width: 100%;
+}
+.index .brand li{
+    float: left;
+    width: 30%;
+}
+.index .brand li:nth-child(1){
+    width: 40%;
+}
+.index .bannerfour{
+    padding: 10px;
+    overflow: hidden;
+    clear: both;
+}
+/*猜你喜欢*/
+.index .guess{
+    background-color: #fff;
+    overflow: hidden;
+}
+.index .guess h4{
+    float: left;
+    padding: 10px;
+    font-weight: 400;
+    color: #aaa;
+
+}
+.index .guess span{
+    float: right;
+    padding: 10px;
+    color: red;
+    font-size: 12px;
+}
+.index .guess span img{
+    display: block;
+    width: 15px;
+    height: 15px;
+    float: left;
+    padding-right: 5px;
+}
+.index .guess ul{
+    width: 100%;
+
+}
+.index .guess li{
+    float: left;
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.index .guess li:nth-child(1){
+   clear: both;
+}
+.index .guess p {
+    font-size: 12px;
+    overflow: hidden;
+    height: 30px;
+    line-height: 15px;
+    /*单行出现省略号*/
+    text-overflow: ellipsis;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient: vertical;
+}
+.index .guess .dv{
+    margin-top: 10px;
+    border-top: 1px solid #c0c0c0;
+}
+.index .guess .dv .price{
+    float: left;
+}
+.index .guess .dv a{
+    float: right;
+    color: #aaaaaa;
+    display: block;
+    margin-top: 8px;
+    font-size: 12px;
+    width: 37px;
+    height: 14px;
+    border: 1px solid #c0c0c0;
+}
+/*点击加载更多*/
+.index .loading{
+    clear: both;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+.index .loading p{
+    color: silver;
+}
+/*底部导航*/
+.index .bottom-nav{
+    height: 30px;
+    border-top: 1px solid #aaaaaa;
+    border-bottom: 1px solid #aaaaaa;
+    font-size: 0;
+    padding-top: 10px;
+    text-align: center;
+}
+.index .bottom-nav a{
+    display: inline-block;
+    width: 75px;
+    color: #aaaaaa;
+    font-size: 14px;
+    border-right: 1px solid #aaaaaa;
+}
+.index .bottom-nav a:last-child{
+    border: none;
+}
+/*设备*/
+.index .device{
+    overflow: hidden;
+    padding: 10px 0;
+    text-align: center;
+}
+.index .device ul{
+    width: 100%;
+}
+.index .device li{
+    float: left;
+    width: 33.33%;
+
+}
+.index .device li a{
+    width: 45px;
+    color: #aaaaaa;
+    margin: auto;
+    font-size: 12px;
+}
+.index .device li a::before {
+    content: "";
+    width: 100%;
+    height: 40px;
+    display: block;
+    background-image: url("../images/jd-sprites.png");
+    background-size: 200px 200px;
+}
+.index .device li .app-icon::before{
+    background-position: -115px -70px;
+}
+.index .device li .mobile-icon::before{
+    background-position: -35px -70px;
+}
+.index .device li .pc-icon::before{
+    background-position: -75px -70px;
+}
+/*版权*/
+.index .copyright{
+    border-top: 1px solid #c0c0c0;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 50px;
+
+}
+.index .copyright p{
+    font-size: 12px;
+    color: #aaaaaa;
+}
+/*<!--底部吸底模块-->*/
+.index .footer{
+    background-color: #fff;
+    height: 45px;
+    position: fixed;
+    bottom: 0;
+    /*z-index: 1;*/
+    width: 100%;
+}
+.index .footer ul{
+    height: 100%;
+
+}
+.index .footer ul li{
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+.index .footer img{
+    width: auto;
+    height: 44px;
+    margin: 0 auto;
+}

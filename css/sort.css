@@ -1,0 +1,132 @@
+/*搜索框部分*/
+.sort{
+    /*overflow-y: scroll;*/
+    /*height: 9000px;*/
+    position: relative;
+}
+.sort .search{
+    height: 44px;
+    background-image: url("../images/header-bg.png");
+    border-bottom: 1px solid #c0c0c0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+.sort .search-box{
+    height: 30px;
+    margin: 7px 40px;
+    border-radius: 7px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    font-size: 12px;
+}
+.sort .search-box input{
+    padding-left: 10px;
+    width: 100%;
+}
+.sort .search a{
+    width: 20px;
+    height: 20px;
+    padding: 12px 10px;
+    position: absolute;
+    top: 0;
+    background-image: url("../images/jd-sprites.png");
+    background-size: 200px 200px;
+    background-origin: content-box;
+    background-clip: content-box;
+}
+.sort .search a.back{
+    background-position: -20px 0;
+}
+.sort .search a.menu{
+    right: 0;
+    background-position: -60px 0;
+}
+/*nav部分*/
+.sort .nav{
+    position: absolute;
+    width: 90px;
+    left: 0;
+    background-color: #F3F4F6;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 50px;
+}
+.sort .nav li{
+    height: 44px;
+    line-height: 44px;
+
+}
+.sort .nav li.active{
+    background-color: #fff;
+    color: red;
+}
+.sort .right{
+    margin-left: 100px;
+}
+.sort .right .panel{
+    overflow: hidden;
+}
+.sort .right h5.first{
+    margin-top: 60px;
+
+}
+.sort .right h5{
+    padding: 15px 3px;
+}
+.sort .right ul{
+    width: 100%;
+}
+.sort .right li{
+    float: left;
+    border: 1px solid #ccc;
+    width: 68px;
+    height: 48px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 48px;
+    box-sizing: border-box;
+    width: 33.33%;
+}
+.sort .right li:nth-child(3n-2){
+    border-right: none;
+}
+.sort .right li:nth-child(2),
+.sort .right li:nth-child(5){
+    border-right: none;
+}
+.sort .right li:nth-child(-n+5){
+    border-bottom: none;
+}
+.sort .right .shopping ul{
+    width: 100%;
+}
+.sort .right .shopping ul li{
+    float: left;
+    height: 66px;
+    border: none;
+    width: 33.33%;
+    height: 100%;
+}
+/*热卖品类*/
+.sort .right .rmpl{
+    overflow: hidden;
+}
+.sort .right .rmpl li{
+    border: none;
+    width: 100%;
+    height: 100%;
+    width: 33.33%;
+}
+/*裙装*/
+.sort .right .qun{
+    overflow: hidden;
+}
+.sort .right .qun li{
+    width: 33.33%;
+    border: none;
+    height: 100%;
+}

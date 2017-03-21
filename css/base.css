@@ -1,0 +1,27 @@
+body,h1,h2,h3,h4,h5,h6,p,ul,input{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: PingFangSC-Regular, Helvetica, "Droid Sans", Arial, sans-serif;
+}
+.wrap{
+    width: 100%;
+}
+input{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none 0;
+    box-sizing: border-box;
+    outline: none;
+}
+a{
+    display: block;
+    text-decoration: none;
+    -webkit-user-select: none;
+}
+img{
+    max-width: 100%;
+    width: 100%;
+    display: block;
+}
